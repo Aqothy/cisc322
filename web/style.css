@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Navigation */
+nav {
+  background: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+header {
+  background: #0073e6;
+  color: #fff;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Layout Containers */
+.container {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+  background: white;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #0073e6;
+  display: inline-block;
+}
+
+/* Team Section */
+.team-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.member-card {
+  background: #eee;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+}
+
+.avatar {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+/* Slideshows & Media */
+.media-wrapper {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Video Section */
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  background: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.placeholder-video {
+  color: white;
+  text-align: center;
+  padding-top: 20%;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+  margin-top: 20px;
+}
